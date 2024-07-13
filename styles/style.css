@@ -3,8 +3,8 @@
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
-    --cor-terciaria: #22d4fD;
-    --cor-hover: #52057B;
+    --cor-terciaria: #7248fb;
+    --cor-hover: #9d67fd;
 
     --font-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
@@ -23,8 +23,34 @@ body {
 
 }
 
+.logo-container {
+    position: absolute;
+    top: 2.0%;
+    left: 8%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  
+  /* Style the logo image */
+  .logo {
+    width: 100px;
+    height: 100px;
+    animation: pulse 2s infinite; /* Add animation */
+  }
+  
+  /* Animation keyframes for the logo */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 3% 0% 0% 68%;
 }
 
 .cabecalho__menu {
@@ -46,17 +72,17 @@ body {
 
 .apresentacao {
     gap: 82px;
-    padding: 5% 15%;
+    padding: 8% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .apresentacao__conteudo {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 
 
 
@@ -110,7 +136,7 @@ strong {
 }
 
 .apresentacao__links_subtitulo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: var(--font-primaria);
 
@@ -119,7 +145,7 @@ strong {
 .apresentacao__links__navegacao {
     color: var(--cor-terciaria);
     width: 50%;
-    padding: 21.5px 0;
+    padding: 3% 0;
     font-size: 1.5rem;
     text-align: center;
     font-weight: 600;
@@ -136,12 +162,11 @@ strong {
 
 .apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
-    padding: 3%;
 }
 
 .apresentacao__imagem{
-    width: 50%;
-
+    width: 30%;
+    margin-bottom: 15%;
 }
 
 .rodape {
@@ -150,7 +175,7 @@ strong {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--font-primaria);
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     font-weight: 400;
 
 
@@ -160,6 +185,8 @@ strong {
     text-decoration: none;
     color: var(--cor-terciaria);
 }
+
+
 
 @media (max-width: 1200px) {
     .cabecalho{
@@ -181,6 +208,44 @@ strong {
     }
 
 }
+
+
+.whatsapp-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+
+  .whatsapp-button {
+    background-color: var(--cor-terciaria);
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: pulse 1s infinite; /* Add animation */
+  }
+  
+  .whatsapp-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 
 
