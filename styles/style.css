@@ -189,6 +189,19 @@ strong {
 
 
 @media (max-width: 1200px) {
+    .logo-container {
+        position: absolute;
+        top: 0%;
+        left: 46.6%;
+        transform: translateX(-50%);
+        z-index: 1000;
+      }
+      .logo {
+        width: 50px;
+        height: 50px;
+        animation: pulse 2s infinite; /* Add animation */
+      }
+        
     .cabecalho{
         padding: 10% ;
     }
